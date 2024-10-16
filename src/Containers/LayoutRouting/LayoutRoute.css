@@ -1,0 +1,124 @@
+.site-header-without-login {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+  .site-header-without-login h2 {
+    margin-bottom: 0px;
+    font-size: 40px;
+  }
+  img.site-logo {
+    max-height: 80px;
+  }
+  #mainContent {
+    height: calc(100vh - 0px);
+    padding-top: 100px;
+  }
+  #mainContent > .container-fluid {
+    min-height: 100%;
+  }
+  #mainContent > .container-fluid .custom-height {
+    height: calc(100vh - 100px);
+  }
+  .site-header-without-login + .container-fluid {
+    background: var(--white);
+  }
+  .login-left-image {
+    background: url(../../images/banner2.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .login-content {
+    padding: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .login-content h1 {
+    font-size: 46px;
+    padding-bottom: 50px;
+    margin: 0px;
+  }
+  .login-content p {
+    font-size: 26px;
+    color: black;
+    /* margin-bottom: 50px; */
+  }
+  .login-content h3 {
+    font-size: 26px;
+    padding-bottom: 0px;
+  }
+  .login-content h4 {
+    font-size: 26px;
+    padding-bottom: 0px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .form-loader .text-center {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+  }
+  .custom-height-scrollbar {
+    overflow-x: auto;
+  }
+
+  .custom-col {
+    /* For col-sm-12 */
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 992px) {
+    .custom-col {
+      /* For col-lg-6 */
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  .custom-flex {
+    display: flex; /* For d-flex */
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .justify-content-center {
+    display: flex;
+    justify-content: center;
+  }
+  .left-content {
+    color: var(--white);
+  }
+  .left-content p {
+    line-height: 35px;
+  }
+  
+  /* Default styles for small screens */
+.column {
+    width: 100%; /* 12 columns */
+  }
+  
+  /* Styles for large screens */
+  @media (min-width: 992px) {
+    .column {
+      width: 50%; /* 6 columns */
+    }
+  }
+  
+  .container {
+    display: flex;
+    align-items: center; /* Vertically centers items in the container */
+    justify-content: center; /* Horizontally centers items in the container */
+  }
+  

@@ -1,0 +1,27 @@
+{
+    "title":"",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["poolname"],
+    "properties": {
+        "poolname": {
+            "type": "string",
+            "title": "Deal Name",
+            "enum" : []
+           
+        },
+        "datecreated": {
+            "type": "string",
+            "title": "Date Created"
+        },
+        "assetclass": {
+            "type": "string",
+            "title": "Asset Class",
+            "enum":["Residential Mortgage","Commercial Mortgage","Corporate Loans","Auto Loans","Consumer Loans","Credit Cards","Leasing","Esoteric","Non Performing Loans","Asset Backed Commercial Papers"]
+        },
+        "issuer": {
+            "type": "string",
+            "title": "Issuer"
+        }  
+    }
+}

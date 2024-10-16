@@ -1,0 +1,18 @@
+{
+    "datecreated": {
+        "ui:widget": "date",
+        "ui:options": {
+          "inline": true,
+          "format":"MM/dd/yyyy"
+        }
+     
+      },
+      "PoolExpiryDate": {
+        "ui:widget": "date",
+        "ui:options": {
+          "inline": true
+        }
+      }
+     
+     
+}

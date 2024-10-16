@@ -1,0 +1,177 @@
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #048c88;
+    --primary_light: #8afff7;
+    --primary_lighter: #d5f2f0;
+    --primary_dark: #064e4a;
+    --secondary: #49ae46;
+    --secondary_light: #7fd67c;
+    --secondary_dark: #2e9a2b;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #e2ebea;
+    --dark: #343a40;
+  }
+  
+.sidebar {
+    width: 80px;
+    float: left;
+    background: #144e4a;
+    position: fixed;
+    z-index: 1000;
+    min-height: 100vh;
+  }
+  .sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+  }
+  .sidebar ul li {
+    display: block;
+    position: relative;
+  }
+  .sidebar ul li a {
+    display: block;
+    text-transform: none;
+    border-left: 3px solid #144e4a;
+    padding: 0px;
+  }
+  .sidebar ul li a:hover {
+    border-left: 3px solid #85f9f9;
+  }
+  .sidebar ul li a .MuiButton-label {
+    text-transform: none;
+  }
+  .sidebar ul li a .MuiButton-label .icon {
+    display: block;
+    text-align: center;
+  }
+  .sidebar ul li a .MuiButton-label .text {
+    display: none;
+    color: #fff;
+  }
+  .sidebar ul li a button {
+    display: block;
+    text-decoration: none !important;
+    width: 100%;
+    text-align: left;
+    padding: 15px 15px 15px 12px;
+    border-radius: 0px !important;
+  }
+  .sidebar ul li.logoPlaceholder a button {
+    padding: 10px 0px;
+    margin-left: 0px;
+    background: #fff;
+  }
+  .sidebar ul li.logoPlaceholder a {
+    border: none !important;
+  }
+  .sidebar ul li.logoPlaceholder a img {
+    max-width: 60px;
+  }
+  
+  .sidebar ul li a:hover {
+    background: #185955;
+  }
+  .sidebar ul li:hover > a {
+    background: #185955;
+  }
+  /* .sidebar ul li a.active{background: #185955} */
+  .sidebar ul li a img {
+    display: inline-block;
+    max-width: 30px;
+    vertical-align: middle;
+  }
+  .sidebar ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 80px;
+    top: 0px;
+    width: 250px;
+  }
+  .sidebar ul .subMenu {
+    width: 300px;
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 15px;
+    margin-left: 15px;
+  }
+  .sidebar ul li:hover ul {
+    display: block;
+  }
+  .sidebar ul ul a {
+    border-left: none !important;
+    border-radius: 7px;
+  }
+  .sidebar ul ul a:hover {
+    border-left: none !important;
+    background-color: #d5f2f0 !important;
+  }
+  .sidebar ul ul li a button {
+    padding: 8px 15px 8px 12px;
+  }
+  .sidebar ul ul a .MuiButton-label .icon {
+    display: inline-block;
+    text-align: left;
+    margin-right: 15px;
+  }
+  .sidebar ul ul a .MuiButton-label .text {
+    display: inline-block;
+    color: #000 !important;
+  }
+
+  .sidebar ul li.userInfo a .MuiButton-label .text {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+  }
+  .sidebar ul li.showMenu {
+    border-top: 1px solid #2e6a68;
+  }
+  .sidebar ul li.showMenu a img {
+    display: inline-block;
+    max-width: 15px;
+    vertical-align: middle;
+  }
+  .sidebar ul li.showMenu a button {
+    padding: 5px;
+  }
+  .logout {
+    padding: 10px !important;
+  }
+  .logout svg {
+    width: 45px;
+  }
+  .logout.MuiButton-containedPrimary {
+    width: 100%;
+    display: block;
+  }
+  .bottomMenu {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+  }

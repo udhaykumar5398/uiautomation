@@ -1,0 +1,105 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    backup.velero.io/backup-volumes: ui-pv
+  name: ui
+  namespace: fabricclient
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ui
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ui
+        selector: ui
+    spec:
+      containers:
+        - image: {{image}}
+          imagePullPolicy: Always
+          name: ui
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          resources:
+            limits:
+              cpu: "1"
+              memory: 1Gi
+            requests:
+              cpu: 750m
+              memory: 750Mi
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+            - mountPath: /var/www/html/root_folder
+              name: ui
+            - mountPath: /var/www/html/root_folder/uploads/StrideFW
+              name: deal1
+            - mountPath: /var/www/html/root_folder/StrideFW
+              name: deal1
+            - mountPath: /var/www/html/root_folder/Dynamic
+              name: deal2
+            - mountPath: /var/www/html/root_folder/Bright
+              name: deal3
+            - mountPath: /var/www/html/root_folder/Credibly
+              name: deal4
+            - mountPath: /var/www/html/root_folder/Stride
+              name: deal5
+            - mountPath: /var/www/html/root_folder/Highrise
+              name: deal6
+            - mountPath: /var/www/html/root_folder/UOWN
+              name: deal7
+            - mountPath: /var/www/html/root_folder/Eve
+              name: deal8
+            - mountPath: /var/www/html/root_folder/PayZen
+              name: deal9
+            - mountPath: /var/www/html/root_folder/Bright2
+              name: deal10
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+        - name: regcred
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+        - name: ui
+          persistentVolumeClaim:
+            claimName: ui-pvc
+        - name: deal1
+          persistentVolumeClaim:
+            claimName: stride2ui-pvc
+        - name: deal2
+          persistentVolumeClaim:
+            claimName: dynamic-ui-pvc
+        - name: deal3
+          persistentVolumeClaim:
+            claimName: brightui-pvc
+        - name: deal4
+          persistentVolumeClaim:
+            claimName: crediblyui-pvc
+        - name: deal5
+          persistentVolumeClaim:
+            claimName: strideui-pvc
+        - name: deal6
+          persistentVolumeClaim:
+            claimName: highriseui-pvc
+        - name: deal7
+          persistentVolumeClaim:
+            claimName: uownui-pvc
+        - name: deal8
+          persistentVolumeClaim:
+            claimName: eveui-pvc
+        - name: deal9
+          persistentVolumeClaim:
+            claimName: payzen-ui-pvc
+        - name: deal10
+          persistentVolumeClaim:
+            claimName: bright2-ui-pvc

@@ -1,0 +1,30 @@
+{
+    "title": "",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "poolname"
+    ],
+    "properties": {
+        "poolname": {
+            "type": "string",
+            "title": "Deal Name",
+            "readOnly": true
+        },
+        "datecreated": {
+            "type": "string",
+            "title": "Date Created",
+            "readOnly": true
+        },
+        "assetclass": {
+            "type": "string",
+            "title": "Asset Class",
+            "readOnly": true
+        },
+        "issuer": {
+            "type": "string",
+            "title": "Issuer",
+            "readOnly": true
+        }
+    }
+}

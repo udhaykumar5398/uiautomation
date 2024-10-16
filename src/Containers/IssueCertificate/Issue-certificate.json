@@ -1,0 +1,25 @@
+{
+    "title":"",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["dealName","messageBody","messageType"],
+    "properties": {
+        "dealName": {
+            "type": "string",
+            "title": "Deal Name" ,
+            "enum": []   
+        },
+        "messageBody": {
+            "type": "string",
+            "title": "Message"
+           
+        },
+        "messageType": {
+            "type": "string",
+            "title": "Message Type",
+            "enum": ["Address","Message","Signatory"]   
+           
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "title":"",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["username","userLastName","emailid","password","phoneno","userrole"],
+    "properties": {
+        "username": {
+            "type": "string",
+            "title": "First Name"
+        },
+        "userLastName": {
+            "type": "string",
+            "title": "Last Name"
+        },
+        "emailid": {
+            "type": "string",
+            "title": "Email Id"
+        },
+        "password": {
+            "type": "string",
+            "title": "Password"
+        },
+        "phoneno": {
+            "type": "string",
+            "title": "Mobile Number"
+        } ,
+        "userrole": {
+            "type": "string",
+            "title": "User Role",
+            "enum": [
+                "Admin",
+                "Processor"
+            ]
+        }
+    }
+}
+
+

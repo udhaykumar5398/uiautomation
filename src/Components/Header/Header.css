@@ -1,0 +1,147 @@
+.customize_top .float-right .MuiFormControlLabel-root {
+    margin: 0px;
+  }
+  .customize_top .float-right button {
+    margin-left: 15px;
+  }
+  .header_right {
+    padding: 10px 10px;
+  }
+  .header_right button {
+    margin-right: 20px;
+  }
+  p.orgname span {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  p.orgname {
+    float: left;
+    font-size: 14px;
+    line-height: 36px;
+    display: block;
+    margin: 0px 10px;
+  }
+
+  .sidebar ul li.userInfo a .MuiButton-label .text {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+  }
+
+  .tableSearch {
+    background: #f1f7f7;
+    padding: 15px 40px;
+    margin: 0px;
+  }
+  .tableSearch #assignpoolbutton button {
+    height: 50px;
+    padding: 20px 30px;
+  }
+ 
+  .pageHeading {
+    line-height: 35px;
+  }
+
+  span.total_deals {
+    background: #048c88;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 8px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .page-contents11 {
+    background: var(--white);
+    border: 2px solid #a0caca;
+    border-radius: 7px;
+    margin-left: 20px;
+  }
+  .fontsizeset {
+    padding-top: 12px;
+    font-size: 18px;
+  }
+  .logo_img {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 20px;
+    float: left;
+  }
+  .logo_img button {
+    padding: 0px;
+    margin: 0px;
+  }
+  .logo_img img {
+    max-height: 50px;
+  }
+  .preprocessing_menu li {
+    position: relative;
+    display: block;
+  }
+  .preprocessing_menu ul {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    display: none;
+    background: #fff;
+    box-shadow: 0px 5px 5px #ccc;
+    padding: 0px 0px 0px 0px;
+    z-index: 100;
+  }
+  .preprocessing_menu li:hover ul {
+    display: block;
+  }
+  .preprocessing_menu ul li {
+    border-bottom: 1px solid #ccc;
+  }
+  .preprocessing_menu ul li:last-child {
+    border-bottom: none;
+  }
+  .preprocessing_menu li a {
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+  .preprocessing_menu li a:hover {
+    text-decoration: none;
+  }
+  .preprocessing_menu .MuiButton-label {
+    text-transform: capitalize !important;
+  }
+  .preprocessing_menu {
+    float: right;
+    margin: 0px;
+  }
+  .preprocessing_menu > li {
+    float: left;
+  }
+  .preprocessing_menu li.userInfo a .MuiButton-label .text {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: #048c88;
+    color: #fff;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+  }
+  .preprocessing_menu li.userInfo a {
+    padding: 0px;
+  }
+  .preprocessing_menu li.userInfo a button {
+    padding: 0px;
+    margin: 0px;
+    min-width: 30px;
+  }

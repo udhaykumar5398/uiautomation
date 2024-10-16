@@ -1,0 +1,14 @@
+{
+    "poolname": {
+      "ui:readonly": true
+    },
+    "datecreated": {
+      "ui:readonly": true
+    },
+    "assetclass": {
+      "ui:readonly": true
+    },
+    "issuer": {
+      "ui:readonly": true
+    }
+  }

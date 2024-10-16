@@ -1,0 +1,20 @@
+{
+    "title":"",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name","userlastname","emailid"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "title": "First Name"
+        },
+        "userlastname": {
+            "type": "string",
+            "title": "Last Name"
+        },
+        "emailid": {
+            "type": "string",
+            "title": "E-mail Address"
+        } 
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "title": "",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "attributePoolName",
+        "attributeName",
+        "attributeStandardName"
+    ],
+    "properties": {
+        "attributePoolName": {
+            "type": "string",
+            "title": "Deal Name"
+        },
+        "attributeName": {
+            "type": "string",
+            "title": "Field Name"
+        },
+        "attributeStandardName": {
+            "type": "string",
+            "title": "Field Standard Name"
+        },
+        "attributeCategory": {
+            "type": "string",
+            "title": "Category",
+            "enum": [
+                "Borrower",
+                "Loan",
+                "Collateral"
+            ]
+        },
+        "attributeDisplay": {
+            "type": "string",
+            "title": "Display in UI",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        }
+    }
+}

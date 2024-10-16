@@ -1,0 +1,24 @@
+{
+    "title":"",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["emailid","password","userrole"],
+    "properties": {
+        "emailid": {
+            "type": "string",
+            "title": "Email ID"
+        },
+        "password": {
+            "type": "string",
+            "title": "Password"
+        },
+        "userrole": {
+            "type": "string",
+            "title": "User Role",
+            "enum": [
+                "Admin",
+                "Processor"
+            ]
+        }
+    }
+}
